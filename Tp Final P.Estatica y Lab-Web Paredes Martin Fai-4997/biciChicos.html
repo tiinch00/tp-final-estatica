@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estiloProducto.css">
+    <script type="text/javascript" src="funciones/funcionesCarrito.js"></script>
+    <title>BICICLETAS CHICOS</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo de la tienda de bicicletas">
+            </a>
+            <h1>Ride Adventure</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="row">
+        <main id="items" class="col-sm-8">
+            <div class="image-item" data-precio="700">
+                <a href="images/chicos1.webp" target="_blank">
+                    <img src="images/chicos1.webp" alt="Bicicleta para niños/as">
+                </a>
+                <h3>Orbea Young Boy</h3>
+                <h5>Talle:M</h5>
+                <h5>Rodado:16</h5>
+                <h5>Precio:700usd</h5>
+                <button onclick="agregarAlCarrito(this)">Añadir al carrito</button>
+            </div>
+            <div class="image-item" data-precio="1500">
+                <a href="images/chicos2.webp" target="_blank">
+                    <img src="images/chicos2.webp" alt="Bicicleta para niños/as">
+                </a>
+                <h3>Orbea Young Boy PRO </h3>
+                <h5>Talle:M</h5>
+                <h5>Rodado:24</h5>
+                <h5>Precio:1500usd</h5>
+                <button onclick="agregarAlCarrito(this)">Añadir al carrito</button>
+            </div>
+            <div class="image-item" data-precio="200">
+                <a href="images/chicos3.webp" target="_blank">
+                    <img src="images/chicos3.webp" alt="Bicicleta para niños/as">
+                </a>
+                <h3>Orbea Camicleta Grey</h3>
+                <h5>Talle:S</h5>
+                <h5>Rodado:12</h5>
+                <h5>Precio:200usd</h5>
+                <button onclick="agregarAlCarrito(this)">Añadir al carrito</button>
+            </div>
+            <div class="image-item" data-precio="400">
+                <a href="images/chicos4.webp" target="_blank">
+                    <img src="images/chicos4.webp" alt="Bicicleta para niños/as">
+                </a>
+                <h3>Trekk Childhood</h3>
+                <h5>Talle:S</h5>
+                <h5>Rodado:12</h5>
+                <h5>Precio:400usd</h5>
+                <button onclick="agregarAlCarrito(this)">Añadir al carrito</button>
+            </div>
+        </main>
+
+        <aside class="col-sm-4">
+            <h2 style="font-family:initial">COMPLETA CON TUS DATOS Y REALIZA TU PEDIDO:</h2>
+            <form id="form" onsubmit="return validar();">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br>
+
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required><br>
+
+                <label for="telefono">Teléfono:</label><br>
+                <input type="text" id="telefono" name="telefono" placeholder="Ingrese su telefono" size="40"
+                    maxlength="15"  required><br>
+
+                <label for="correo">Correo:</label><br>
+                <input type="text" id="email" name="correo" placeholder="Ingrese su email"><br>
+                <span id="emailOK"></span><br>
+
+                <label for="start">Fecha de envío:</label>
+                <input type="text" id="fechaEnvio" name="fechaEnvio" readonly><br>
+
+                <ul id="carrito" class="list-group"></ul>
+                <input type="button" onclick="confirmarEnvio()" value="Enviar Pedido">
+                <input type="button" onclick="borrar()" value="Armar otro pedido">
+            </form>
+            <h2>Carrito de Compras</h2>
+            <ul id="carrito-items"></ul>
+            <p class="text-right">Total: <span id="total">0</span> USD</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Bicicletas. Todos los derechos reservados.</p>
+        <p>
+            <a href="acerca.html">Acerca de nosotros</a> |
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </p>
+    </footer>
+</body>
+
+</html>

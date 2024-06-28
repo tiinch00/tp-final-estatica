@@ -1,0 +1,137 @@
+
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 20px; 
+}
+body {
+    background-color: #fff59d;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+.header{
+    background-color: #1b3039;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+.header .logo{  
+    cursor: pointer;/**manito al pasar por el logo*/
+    display: flex; 
+    align-items: center;    
+    justify-content:space-between;
+
+}
+.header .logo h1{ 
+    cursor:auto;
+    font-size: 50px;
+    margin-left: 300px;
+    text-align: center;
+    color:#fff59d   ;
+}
+.header .logo img{
+    height: 85px;
+    width: auto;
+    transition: all 0.3s;
+    border: none;
+    border-radius: 10px;
+}
+.header .logo img:hover{
+    transform: scale(1.2); /**Dar un efecto de acercamiento*/
+}
+
+.header .nav-links{
+    list-style: none;
+}
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+
+}
+.header .nav-links a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;
+    
+}
+.header .nav-links li a:hover{
+    color: #ffbc0e;
+    
+}
+footer a{
+    color:#fff59d;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 1200px;
+   
+}
+
+
+.video {
+    
+
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+   
+}
+#vid2{
+    display: flex;
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#noticias h1, #videos h1 {
+    background-color: #1b3039;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.noticia-item, .video {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.noticia-item a {
+    text-decoration: none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+.noticia-item h3, .video h2 {
+    margin-bottom: 10px;
+    
+}
+
+.noticia-item p, .video p {
+    margin-bottom: 15px;
+}
+.video h2 {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}

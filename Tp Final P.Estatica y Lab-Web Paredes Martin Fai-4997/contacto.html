@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilosForm.css">
+    <link rel="icon"  type="image/png" href="images/177819.png">
+    <script type="text/javascript" src="funciones/funcionesContacto.js"></script>
+    <title>CONTACTO</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+            <img src="images/logo.png" alt="Logo de la tienda de bicicletas">
+            </a>
+            <h1>Ride Adventure</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>           
+        </nav>
+    </header>   
+    <h2>INGRESE SUS DATOS Y ENVIANOS UN MENSAJE!</h2>
+    <div class="container">
+        
+        <form id="miFormulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+  
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido">
+  
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+  
+            <label for="mensaje">Ingrese su mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+
+            <input type="submit" value="Enviar" onclick="return validar();">
+        </form>
+  
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24824.333602009632!2d-68.13901484012601!3d-38.945875717407006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a3374a4fd0d47%3A0xb6d247482838f589!2sTOTEM%20BIKE!5e0!3m2!1ses-419!2sar!4v1718489138479!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+        </div>
+    </div>
+
+    <div id="datos">
+        Teléfono Celular: <strong>299-4584630</strong><br>
+        E-Mail: <strong>mdep171@gmail.com</strong><br>
+        Dirección: <strong>Collon cura 815, Neuquen Capital</strong><br>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Bicicletas. Todos los derechos reservados.</p>
+        <p>
+            <a href="acerca.html">Acerca de nosotros</a> | 
+            <a href="https://facebook.com" target="_blank">Facebook</a> | 
+            <a href="https://twitter.com" target="_blank">Twitter</a> | 
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
